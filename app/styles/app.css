@@ -5,3 +5,49 @@
 
 @import "tailwindcss/utilities";
 @import "utilities.css";
+
+@keyframes hf-slide-in-up {
+    from {
+      transform: translate3d(0, 15%, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .hf-slide-in-up {
+    animation: hf-slide-in-up 200ms 0ms ease;
+  }
+  
+  @keyframes hf-slide-in-down {
+    from {
+      transform: translate3d(0, -15%, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .hf-slide-in-down {
+    animation: hf-slide-in-down 200ms 0ms ease forwards;
+  }
+  
+  @keyframes hf-slide-out-down {
+    from {
+      transform: translate3d(0, 0%, 0);
+      opacity: 1;
+    }
+    to {
+      transform: translate3d(0, 15%, 0);
+      opacity: 0;
+    }
+  }
+  
+  .hf-slide-out-down {
+    animation: hf-slide-out-down 200ms 0ms ease forwards;
+  }
+  
